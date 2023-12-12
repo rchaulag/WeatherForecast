@@ -267,3 +267,27 @@ paket-files/
 __pycache__/
 *.pyc
 
+/.vs/ForecastFavorApp_Web/DesignTimeBuild/.dtbcache.v2
+/.vs/ForecastFavorApp_Web/v17/.suo
+/ForecastFavorApp-UnitTest/obj/project.assets.json
+/ForecastFavorApp-IntegrationTest/bin/Debug/net6.0/CoverletSourceRootsMapping
+/ForecastFavorApp-IntegrationTest/bin/Debug/net6.0/ForecastFavorApp-IntegrationTest.dll
+/ForecastFavorApp-IntegrationTest/bin/Debug/net6.0/ForecastFavorApp-IntegrationTest.pdb
+/ForecastFavorApp-IntegrationTest/bin/Debug/net6.0/ForecastFavorApp.dll
+/ForecastFavorApp-IntegrationTest/bin/Debug/net6.0/ForecastFavorApp.pdb
+/ForecastFavorApp-IntegrationTest/bin/Debug/net6.0/ForecastFavorApp.staticwebassets.runtime.json
+/ForecastFavorApp-IntegrationTest/bin/Debug/net6.0/ForecastFavorLib.pdb
+/ForecastFavorApp/bin/Debug/net6.0/ForecastFavorApp.dll
+/ForecastFavorApp/bin/Debug/net6.0/ForecastFavorApp.pdb
+/ForecastFavorApp/bin/Debug/net6.0/ForecastFavorApp.staticwebassets.runtime.json
+/ForecastFavorApp/bin/Debug/net6.0/ForecastFavorLib.dll
+/ForecastFavorApp/bin/Debug/net6.0/ForecastFavorLib.pdb
+/ForecastFavorApp-IntegrationTest/obj/project.assets.json
+/.vs/ForecastFavorApp_Web/DesignTimeBuild/.dtbcache.v2
+/ForecastFavorApp/obj/Debug/net6.0/staticwebassets.build.json
+/ForecastFavorApp/obj/Debug/net6.0/staticwebassets.development.json
+/ForecastFavorApp/obj/ForecastFavorApp.csproj.nuget.dgspec.json
+/ForecastFavorApp/obj/project.assets.json
+/ForecastFavorApp/obj/project.nuget.cache
+/ForecastFavorApp-IntegrationTest/obj/project.nuget.cache
+/ForecastFavorApp/obj/staticwebassets.pack.sentinel
