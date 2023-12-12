@@ -2,6 +2,10 @@
 @*@model ForecastFavorLib.Models.CurrentWeatherResponse*@
 @model ForecastFavorLib.Models.APIModels.CurrentLocationForecastResponse
 
+<!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4HKfiUvRAtp5-DeqR1iR5veUCjy4avvo&callback=initMap&libraries=&v=weekly"
+        async defer></script>
+
 @{
     ViewData["Title"] = "Current Weather";
     var conditionMessage = "Feels like " + Model.Current.FeelsLikeC + "&#8451;" + "Wind is " + Model.Current.WindKph + "kph. " + "Cloud coverage of " + Model.Current.Cloud + " .";
@@ -67,7 +71,7 @@
                                 grid-column: span 12;
                                 grid-template-columns: minmax(0,1fr) 350px;
                                 grid-column-gap: 12px;
-                                max-width: 1162px;
+
 
 ">
         <section style="
@@ -188,6 +192,9 @@ border-radius: 20px 20px 0 0;">
         </section>
     </div>
 
+    @*just a google map*@
+    <div id="map" style="height:400px;width:100%;"></div>
+
     <h2 class="display-4 text-center mb-4">Current Weather in Sudbury</h2>
 
     @* Start a division to contain the weather details *@
@@ -211,6 +218,27 @@ border-radius: 20px 20px 0 0;">
 
 
 <script>
+    //Start-Google Map- static
+    let map;
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: {
+                lat: 46.5227,
+                lng: -80.9527
+            },
+            zoom: 15,
+        });
+        var marker = new google.maps.Marker({
+            position: {
+                lat: 46.5227,
+                lng: -80.9527
+            },
+            map: map,
+            draggable: true
+        });
+    }
+    //End-Google Map- static
+
     document.getElementById("fetchWeatherButton").addEventListener("click", function () {
         // Send a request to the Index action method
         fetch("/Weather/Index")
